@@ -19,7 +19,19 @@
     },
     "menu": {
       "dashboard": "Dashboard",
-      "editors": "Editors",
+      "market":"Market",
+      "equity":"Equity",
+      "forecasting_and_valuation":"Forecasting and Valuation",
+      "bonds":"Bonds",
+      "macros":"Macros",
+      "taxes":"Taxes",
+      "literature":"Literature",
+      "obs":"OBS",
+      "news":"News",
+
+
+
+      "editor": "Editor",
       "ck_editor": "CKEditor",
       "components": "Components",
       "tree_view": "Tree View",

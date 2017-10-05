@@ -1,0 +1,25 @@
+.tab-container {
+
+	.nav-tabs>li>a {
+		line-height: 1.42857143;
+	}
+
+	.nav>li>a {
+		padding: 10px 15px;
+	}
+
+	.nav.nav-tabs,
+	.nav.nav-tabs>li>a:hover {
+		background-color: rgba(0,0,0,.2);
+	}
+	.nav-tabs .nav-item + .nav-item {
+		margin-left: 0;
+	}
+	.nav.nav-tabs>li.active>a {
+		color: #fff;
+		background-color: rgba(0,0,0,.25);
+	}
+	.tab-content {
+		padding: 15px;
+	}
+}

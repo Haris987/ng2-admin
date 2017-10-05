@@ -14,11 +14,120 @@ export const PAGES_MENU = [
           }
         }
       },
+     
       {
-        path: 'editors',
+        path: 'market',
         data: {
           menu: {
-            title: 'general.menu.editors',
+            title: 'general.menu.market',
+            icon: 'ion-edit',
+            selected: false,
+            expanded: false,
+            order: 100,
+          }
+        },
+      },
+      {
+        path: 'equity',
+        data: {
+          menu: {
+            title: 'general.menu.equity',
+            icon: 'ion-gear-a',
+            selected: false,
+            expanded: false,
+            order: 200,
+          }
+        }
+      },
+      {
+        path: 'forecasting_and_valuation',
+        data: {
+          menu: {
+            title: 'general.menu.forecasting_and_valuation',
+            icon: 'ion-gear-a',
+            selected: false,
+            expanded: false,
+            order: 300,
+          }
+        }
+      },
+      {
+        path: 'bonds',
+        data: {
+          menu: {
+            title: 'general.menu.bonds',
+            icon: 'ion-gear-a',
+            selected: false,
+            expanded: false,
+            order: 400,
+          }
+        }
+      },
+      {
+        path: 'macros',
+        data: {
+          menu: {
+            title: 'general.menu.macros',
+            icon: 'ion-gear-a',
+            selected: false,
+            expanded: false,
+            order: 500,
+          }
+        }
+      },
+      {
+        path: 'taxes',
+        data: {
+          menu: {
+            title: 'general.menu.taxes',
+            icon: 'ion-gear-a',
+            selected: false,
+            expanded: false,
+            order: 600,
+          }
+        }
+      },
+      {
+        path: 'literature',
+        data: {
+          menu: {
+            title: 'general.menu.literature',
+            icon: 'ion-gear-a',
+            selected: false,
+            expanded: false,
+            order: 700,
+          }
+        }
+      },
+      {
+        path: 'obs',
+        data: {
+          menu: {
+            title: 'general.menu.obs',
+            icon: 'ion-gear-a',
+            selected: false,
+            expanded: false,
+            order: 800,
+          }
+        }
+      },
+      {
+        path: 'news',
+        data: {
+          menu: {
+            title: 'general.menu.news',
+            icon: 'ion-gear-a',
+            selected: false,
+            expanded: false,
+            order: 900,
+          }
+        }
+      },
+       /*{
+        path: 'editor',
+        data: {
+          menu: {
+            title: 'general.menu.editor',
             icon: 'ion-edit',
             selected: false,
             expanded: false,
@@ -35,7 +144,9 @@ export const PAGES_MENU = [
             }
           }
         ]
-      },
+      },*/
+
+      /*
       {
         path: 'components',
         data: {
@@ -57,8 +168,8 @@ export const PAGES_MENU = [
             }
           }
         ]
-      },
-      {
+      },*/
+     /* {
         path: 'charts',
         data: {
           menu: {
@@ -348,7 +459,7 @@ export const PAGES_MENU = [
             target: '_blank'
           }
         }
-      }
+      }*/
     ]
   }
 ];
