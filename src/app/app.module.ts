@@ -5,6 +5,8 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TranslateService } from '@ngx-translate/core';
+import { FormlyModule, FormlyBootstrapModule } from 'ng-formly';
+import { AuthService } from './auth/auth.service';
 /*
  * Platform and Environment providers/directives/pipes
  */
@@ -20,42 +22,44 @@ import { PagesModule } from './pages/pages.module';
 
 // Application wide providers
 const APP_PROVIDERS = [
-  AppState,
-  GlobalState
+	AppState,
+	GlobalState,
+	AuthService
 ];
 
 export type StoreType = {
-  state: InternalStateType,
-  restoreInputValues: () => void,
-  disposeOldHosts: () => void
+	state: InternalStateType,
+	restoreInputValues: () => void,
+	disposeOldHosts: () => void
 };
 
 /**
  * `AppModule` is the main entry point into Angular2's bootstraping process
  */
 @NgModule({
-  bootstrap: [App],
-  declarations: [
-    App
-  ],
-  imports: [ // import Angular's modules
-    BrowserModule,
-    HttpModule,
-    RouterModule,
-    FormsModule,
-    ReactiveFormsModule,
-    NgaModule.forRoot(),
-    NgbModule.forRoot(),
-    PagesModule,
-    routing
-  ],
-  providers: [ // expose our Services and Providers into Angular's dependency injection
-    APP_PROVIDERS
-  ]
+	bootstrap: [App],
+	declarations: [
+		App
+	],
+	imports: [ // import Angular's modules
+		BrowserModule,
+		HttpModule,
+		RouterModule,
+		FormsModule,
+		FormlyBootstrapModule,
+		ReactiveFormsModule,
+		NgaModule.forRoot(),
+		NgbModule.forRoot(),
+		PagesModule,
+		routing
+	],
+	providers: [ // expose our Services and Providers into Angular's dependency injection
+		APP_PROVIDERS
+	]
 })
 
 export class AppModule {
 
-  constructor(public appState: AppState) {
-  }
+	constructor(public appState: AppState) {
+	}
 }
