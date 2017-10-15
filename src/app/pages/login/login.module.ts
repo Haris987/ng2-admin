@@ -21,13 +21,6 @@ import { LoginFormConfig } from './login.form';
       validators: [{ name: 'required', validation: Validators.required }],
       validationMessages: [
         { name: 'required', message: (err, field) => `${field.templateOptions.label} is required.` },
-        { name: 'invalidEmailAddress', message: 'Invalid Email Address' },
-        { name: 'maxlength', message: 'Maximum Length Exceeded.' },
-        {
-          name: 'minlength', message: (err) => {
-          return `Should have atleast ${err.requiredLength} Characters`;
-        },
-        },
       ]
     }),
     FormlyBootstrapModule,

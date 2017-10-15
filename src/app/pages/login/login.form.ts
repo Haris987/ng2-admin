@@ -29,7 +29,7 @@ export class LoginFormConfig {
 					required: true,
 				},
 				validators: {
-					validation: Validators.compose([Validators.required])
+					validation: [Validators.required]
 				}
 			}
 		];
