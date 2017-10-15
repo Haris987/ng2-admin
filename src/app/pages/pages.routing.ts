@@ -2,18 +2,18 @@ import { Routes, RouterModule } from '@angular/router';
 import { Pages } from './pages.component';
 import { ModuleWithProviders } from '@angular/core';
 import { AuthGuard } from '../auth/auth.guard';
-// noinspection TypeScriptValidateTypes
-
-// export function loadChildren(path) { return System.import(path); };
+import { LoggedGuard } from '../auth/logged.guard';
 
 export const routes: Routes = [
   {
     path: 'login',
-    loadChildren: 'app/pages/login/login.module#LoginModule'
+    loadChildren: 'app/pages/login/login.module#LoginModule',
+    canActivate: [LoggedGuard]
   },
   {
     path: 'register',
     loadChildren: 'app/pages/register/register.module#RegisterModule',
+    canActivate: [LoggedGuard]
   },
   {
     path: 'pages',
